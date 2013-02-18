@@ -1,0 +1,5 @@
+E:\Work\MaterialAdvertisement\MaterialAdvertisement.git\trunk\MaterialAdvertisement\MaterialAdvertisement\bin\MaterialAdvertisement.dll
+E:\Work\MaterialAdvertisement\MaterialAdvertisement.git\trunk\MaterialAdvertisement\MaterialAdvertisement\bin\MaterialAdvertisement.pdb
+E:\Work\MaterialAdvertisement\MaterialAdvertisement.git\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\MaterialAdvertisement\MaterialAdvertisement.git\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\MaterialAdvertisement.dll
+E:\Work\MaterialAdvertisement\MaterialAdvertisement.git\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\MaterialAdvertisement.pdb
