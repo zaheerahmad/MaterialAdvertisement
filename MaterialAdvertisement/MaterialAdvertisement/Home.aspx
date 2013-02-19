@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MaterialAdvertisement.Home" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="cphFilterSideBar" runat="server">
+    <div style="position:fixed">
     <legend>Filter Advertisements</legend>
     <form action="">
         <table class="table">
@@ -17,14 +19,6 @@
                   <option>Type C</option>
                   <option>Type D</option>
                 </select>
-            </td>
-          </tr>
-          <tr>
-            <td>
-                <label>Start Date</label>
-            </td>
-            <td>
-                <label>End Date</label>
             </td>
           </tr>
           <tr>
@@ -62,13 +56,35 @@
             </td>
             <td>&nbsp;</td>
           </tr>
-        </table><br />
+        </table>
+        <table class="table">
+            <tr>
+                <td>
+                    <div id="datetimepicker1" class="input-append date">
+                        <label class="control-label" for="startDate">Start Date</label>
+                         
+                          <input data-format="yyyy/dd/MM hh:mm:ss" value="" type="text" name="startDate"></input>
+                         <span class="add-on">
+                         <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+                         </i>
+                         </span>
+    
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>End Date</label>
+                </td>
+          </tr>
+        </table>
         <div class="control-group">
         <div class="controls">
             <button type="submit" class="btn  btn-primary">Filter Result</button>
         </div>
         </div>
     </form>
+    </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBodyContent" runat="server">
     <legend>Welcome to Materials Advertisement WebSite</legend>
