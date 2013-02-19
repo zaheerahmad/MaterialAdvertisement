@@ -10,37 +10,49 @@
         <script type="text/javascript" src="assets/Scripts/jquery.leanModal.min.js"></script>
         <script src="assets/datepicker/js/bootstrap-datepicker.js"></script>
         <script type="text/javascript">
-            $(function () {
-                        $('.date').datetimepicker({
-                          language: 'pt-BR'
-                        });
-                    $('.date').datetimepicker().live('changeDate',function(){   
-                      $(this).datetimepicker('hide');  
-                     });
-                    });
-        </script>
-        <script type="text/javascript">
-            
             $(document).ready(function () {
-                //            $('#login').fadeOut(0);
-                //            $('#other').fadeIn(1000);
+               
 
-//                $('ul.nav').children('li').children('a').click(function () {
-//                    $('ul.nav').children('li').toggleClass('active', addOrRemove);
-//                });
                 $('a#loginAnchor').click(function () {
+
                     $("#panel").slideToggle("slow");
+                    $('#errorAlert').fadeOut(0);
                 });
                 $('a#signUpAnchor').click(function () {
                     $('a#signUpAnchor').parent().addClass('active');
                 });
             });
         </script>
+        <script type="text/javascript">
+            function SignInUser() {
+                var inputEmail = document.getElementById('inputEmail').value;
+                var password = document.getElementById('inputPassword').value;
+
+                if (inputEmail == null || inputEmail == "" || password == null || password == "") {
+                    $('#errorAlert').fadeIn(100);
+                }
+                else {
+                    $('#errorAlert').fadeOut(0);
+                    $.ajax({
+                        type: "POST",
+                        url: "abc.asmx/SignInUser",
+                        //data: .encode({pUserName: inp});
+                        data: "{'pUserName':'"+inputEmail+"','pPassword':'"+password+"'}",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        async: true,
+                        cache: false,
+                        success: function (msg) {
+                            alert("Done")
+                        }
+                    });
+                }
+            }
+        </script>
         <style type="text/css"> 
             #panel,#flip
             {
-            padding:5px;
-            text-align:center;
+            padding:0px;
             background-color:#F8F8F8;
             border:solid 1px #000000;
             }
@@ -90,24 +102,30 @@
         </div>
         </div>
         <div class="row" id = "panel" >
-            <div class="span5 offset7">
+            <div class="span5 offset4">
+                <div class="alert alert-error" id="errorAlert">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h4>Error!</h4>
+                    Invalid User/Password.
+                </div>
                 <form class="form-horizontal">
-                    <h5>Please Enter your Credentials Here</h5>
+                    <legend>Please Enter your Credentials Here</legend>
+                    
                     <div class="control-group">
                     <label class="control-label" for="inputEmail">Email</label>
                     <div class="controls">
-                        <input type="text" id="inputEmail" placeholder="Email" class="input-small">
+                        <input type="text" id="inputEmail" placeholder="Email">
                     </div>
                     </div>
                     <div class="control-group">
                     <label class="control-label" for="inputPassword">Password</label>
                     <div class="controls">
-                        <input type="password" id="inputPassword" placeholder="Password" class="input-small">
+                        <input type="password" id="inputPassword" placeholder="Password">
                     </div>
                     </div>
                     <div class="control-group">
                     <div class="controls">
-                        <button type="submit" class="btn  btn-primary">Sign in</button>
+                        <button type="submit" class="btn  btn-primary" onclick="SignInUser()">Sign in</button>
                     </div>
                     </div>
                 </form>
