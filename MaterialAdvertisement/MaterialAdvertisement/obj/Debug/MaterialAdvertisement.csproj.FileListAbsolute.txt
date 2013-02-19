@@ -3,3 +3,8 @@ E:\Work\MaterialAdvertisement\MaterialAdvertisement.git\trunk\MaterialAdvertisem
 E:\Work\MaterialAdvertisement\MaterialAdvertisement.git\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\ResolveAssemblyReference.cache
 E:\Work\MaterialAdvertisement\MaterialAdvertisement.git\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\MaterialAdvertisement.dll
 E:\Work\MaterialAdvertisement\MaterialAdvertisement.git\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\MaterialAdvertisement.pdb
+D:\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\bin\MaterialAdvertisement.dll
+D:\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\bin\MaterialAdvertisement.pdb
+D:\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\ResolveAssemblyReference.cache
+D:\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\MaterialAdvertisement.dll
+D:\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\MaterialAdvertisement.pdb
