@@ -9,7 +9,7 @@
         });
     });
 </script>
-<div class="span2" style="position:fixed">
+<div class="span2">
     <ul class="nav nav-list">
       <li class="nav-header">Advertisements</li>
       <li id="home"><a href="Admin.aspx?ctl=5">Home</a></li>
