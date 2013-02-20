@@ -1,6 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MaterialAdvertisement.Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphFilterSideBar" runat="server">
+
+<script type="text/javascript">
+    $('table').children().remove();
+
+    $('table').append(data.html);
+
+</script>
+
     <div style="position:fixed">
     <legend>Filter Advertisements</legend>
     <form action="">
@@ -75,6 +83,9 @@
             <tr>
                 <td>
                     <label>End Date</label>
+                    <input data-format="yyyy/dd/MM hh:mm:ss" value="" type="text" name="startDate"></input>
+                         <span class="add-on">
+                         <i data-time-icon="icon-time" data-date-icon="icon-calendar">
                 </td>
           </tr>
         </table>

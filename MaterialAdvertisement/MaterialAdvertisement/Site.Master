@@ -35,15 +35,23 @@
                     $('#errorAlert').fadeOut(0);
                     $.ajax({
                         type: "POST",
-                        url: "abc.asmx/SignInUser",
+                        url: "WebServices/LoginWebService.asmx/SignInUser",
                         //data: .encode({pUserName: inp});
-                        data: "{'pUserName':'"+inputEmail+"','pPassword':'"+password+"'}",
+                        data: "{'pUserName':'" + inputEmail + "','pPassword':'" + password + "'}",
                         contentType: "application/json; charset=utf-8",
                         dataType: "json",
                         async: true,
                         cache: false,
                         success: function (msg) {
                             alert("Done")
+                            alert(msg.d);
+//                            if (msg.d != "") {
+//                                alert(msg.name);
+//                               
+
+//                                var arrItems = msg.d.split("|");
+//                                window.location = "Admin/Admin.aspx?ctl=1&i=" + arrItems[0] + "&u='" + arrItems[1] + "'&n='" + arrItems[2] + "'";
+                            }
                         }
                     });
                 }

@@ -83,6 +83,40 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="abc.asmx" />
+    <Content Include="Admin\Admin.aspx" />
+    <Content Include="Admin\AdminSite.csproj" />
+    <Content Include="Admin\AdminSite.csproj.user" />
+    <Content Include="Admin\assets\bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="Admin\assets\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="Admin\assets\bootstrap\css\bootstrap.css" />
+    <Content Include="Admin\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Admin\assets\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="Admin\assets\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="Admin\assets\bootstrap\js\bootstrap.js" />
+    <Content Include="Admin\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Admin\assets\images\Control Panel.png" />
+    <Content Include="Admin\assets\Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Admin\assets\Scripts\jquery-1.4.1.js" />
+    <Content Include="Admin\assets\Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Admin\assets\Styles\Site.css" />
+    <Content Include="Admin\Controls\ctlAddClient.ascx" />
+    <Content Include="Admin\Controls\ctlAddNews.ascx" />
+    <Content Include="Admin\Controls\ctlAddPortfolio.ascx" />
+    <Content Include="Admin\Controls\ctlAddProject.ascx" />
+    <Content Include="Admin\Controls\ctlAddServices.ascx" />
+    <Content Include="Admin\Controls\ctlClient.ascx" />
+    <Content Include="Admin\Controls\ctlLogin.ascx" />
+    <Content Include="Admin\Controls\ctlManageClient.ascx" />
+    <Content Include="Admin\Controls\ctlManageNews.ascx" />
+    <Content Include="Admin\Controls\ctlManagePortfolio.ascx" />
+    <Content Include="Admin\Controls\ctlManageProject.ascx" />
+    <Content Include="Admin\Controls\ctlManageServices.ascx" />
+    <Content Include="Admin\Controls\ctlNews.ascx" />
+    <Content Include="Admin\Controls\ctlPortfolio.ascx" />
+    <Content Include="Admin\Controls\ctlProject.ascx" />
+    <Content Include="Admin\Controls\ctlServices.ascx" />
+    <Content Include="Admin\Controls\ctlWelcome.ascx" />
+    <Content Include="Admin\Global.asax" />
     <Content Include="App_Data\MaterialAdvertisement.mdf" />
     <Content Include="App_Data\MaterialAdvertisement_log.ldf">
       <DependentUpon>MaterialAdvertisement.mdf</DependentUpon>
@@ -121,12 +155,166 @@
     </Content>
     <Content Include="Home.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="WebServices\LoginWebService.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="abc.asmx.cs">
       <DependentUpon>abc.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Admin\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminSite.Master.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminSite.Master.designer.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Common\Common.cs" />
+    <Compile Include="Admin\Controls\ControlSettings.cs" />
+    <Compile Include="Admin\Controls\ctlAddClient.ascx.cs">
+      <DependentUpon>ctlAddClient.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlAddClient.ascx.designer.cs">
+      <DependentUpon>ctlAddClient.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlAddNews.ascx.cs">
+      <DependentUpon>ctlAddNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlAddNews.ascx.designer.cs">
+      <DependentUpon>ctlAddNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlAddPortfolio.ascx.cs">
+      <DependentUpon>ctlAddPortfolio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlAddPortfolio.ascx.designer.cs">
+      <DependentUpon>ctlAddPortfolio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlAddProject.ascx.cs">
+      <DependentUpon>ctlAddProject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlAddProject.ascx.designer.cs">
+      <DependentUpon>ctlAddProject.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlAddServices.ascx.cs">
+      <DependentUpon>ctlAddServices.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlAddServices.ascx.designer.cs">
+      <DependentUpon>ctlAddServices.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlClient.ascx.cs">
+      <DependentUpon>ctlClient.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlClient.ascx.designer.cs">
+      <DependentUpon>ctlClient.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlLogin.ascx.cs">
+      <DependentUpon>ctlLogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlLogin.ascx.designer.cs">
+      <DependentUpon>ctlLogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlManageClient.ascx.cs">
+      <DependentUpon>ctlManageClient.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlManageClient.ascx.designer.cs">
+      <DependentUpon>ctlManageClient.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlManageNews.ascx.cs">
+      <DependentUpon>ctlManageNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlManageNews.ascx.designer.cs">
+      <DependentUpon>ctlManageNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlManagePortfolio.ascx.cs">
+      <DependentUpon>ctlManagePortfolio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlManagePortfolio.ascx.designer.cs">
+      <DependentUpon>ctlManagePortfolio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlManageProject.ascx.cs">
+      <DependentUpon>ctlManageProject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlManageProject.ascx.designer.cs">
+      <DependentUpon>ctlManageProject.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlManageServices.ascx.cs">
+      <DependentUpon>ctlManageServices.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlManageServices.ascx.designer.cs">
+      <DependentUpon>ctlManageServices.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlNews.ascx.cs">
+      <DependentUpon>ctlNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlNews.ascx.designer.cs">
+      <DependentUpon>ctlNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlPortfolio.ascx.cs">
+      <DependentUpon>ctlPortfolio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlPortfolio.ascx.designer.cs">
+      <DependentUpon>ctlPortfolio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlProject.ascx.cs">
+      <DependentUpon>ctlProject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlProject.ascx.designer.cs">
+      <DependentUpon>ctlProject.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlServices.ascx.cs">
+      <DependentUpon>ctlServices.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlServices.ascx.designer.cs">
+      <DependentUpon>ctlServices.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlWelcome.ascx.cs">
+      <DependentUpon>ctlWelcome.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\ctlWelcome.ascx.designer.cs">
+      <DependentUpon>ctlWelcome.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\PorfolioCollection.cs" />
+    <Compile Include="Admin\Dao\ClientController.cs" />
+    <Compile Include="Admin\Dao\LoginController.cs" />
+    <Compile Include="Admin\Dao\NewsController.cs" />
+    <Compile Include="Admin\Dao\PortfolioController.cs" />
+    <Compile Include="Admin\Dao\ProjectController.cs" />
+    <Compile Include="Admin\Dao\ServiceController.cs" />
+    <Compile Include="Admin\Dao\ToolsAndTechniqueController.cs" />
+    <Compile Include="Admin\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Model\Client.cs" />
+    <Compile Include="Admin\Model\Login.cs" />
+    <Compile Include="Admin\Model\News.cs" />
+    <Compile Include="Admin\Model\Portfolio.cs" />
+    <Compile Include="Admin\Model\Project.cs" />
+    <Compile Include="Admin\Model\Service.cs" />
+    <Compile Include="Admin\Model\ToolsAndTechnique.cs" />
     <Compile Include="CodeGen\ClassGenerator.ascx.cs">
       <DependentUpon>ClassGenerator.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -162,7 +350,8 @@
     <Compile Include="CodeGen\MasterPage.master.designer.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
     </Compile>
-    <Compile Include="Common\Utility.cs" />
+    <Compile Include="Common\JsonHelper.cs" />
+    <Compile Include="Common\Person.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -190,6 +379,10 @@
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebServices\LoginWebService.asmx.cs">
+      <DependentUpon>LoginWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -199,6 +392,7 @@
     <Content Include="CodeGen\MasterPage.master" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AdminSite.Master" />
     <None Include="assets\datepicker\less\datepicker.less" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

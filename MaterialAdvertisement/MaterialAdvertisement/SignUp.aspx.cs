@@ -11,7 +11,8 @@ namespace MaterialAdvertisement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            divStatusError.Visible = false;
+            divStatusSuccess.Visible = false;
         }
     }
 }
