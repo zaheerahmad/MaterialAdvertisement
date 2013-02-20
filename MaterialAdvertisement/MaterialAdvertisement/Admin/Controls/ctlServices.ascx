@@ -9,16 +9,20 @@
         });
     });
 </script>
-<div class="span2">
+<div class="span2" style="position:fixed">
     <ul class="nav nav-list">
-      <li class="nav-header">Sercices</li>
+      <li class="nav-header">Advertisements</li>
       <li id="home" class="active"><a href="Admin.aspx?ctl=5">Home</a></li>
-      <li id="add"><a href="Admin.aspx?ctl=2">Add Services</a></li>
-      <li id="manage"><a href="Admin.aspx?ctl=3">Manage Services</a></li>
+      <li id="add"><a href="Admin.aspx?ctl=2">Post Ad</a></li>
+      <li id="manage"><a href="Admin.aspx?ctl=3">Manage Your Ads</a></li>
     </ul>
 </div>
 <div class="span8">
     <div class="page-header">
-      <h1>Services<small> Welcome to Services Control</small></h1>
+      <h1>Advertisement<small> Welcome to Advertisements Control</small></h1>
+    </div>
+    <div class="hero-unit">
+        <legend><h3>Account Summary</h3></legend>
+
     </div>
 </div>

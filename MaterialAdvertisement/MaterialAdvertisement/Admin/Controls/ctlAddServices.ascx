@@ -9,7 +9,7 @@
         });
     });
 </script>
-<div class="span2">
+<div class="span2" style="position:fixed">
     <ul class="nav nav-list">
       <li class="nav-header">Advertisements</li>
       <li id="home"><a href="Admin.aspx?ctl=5">Home</a></li>
@@ -50,8 +50,7 @@
         </div>
       </div>
       <div class="control-group">
-        <label class="control-label" for="fuAdPictures">Pictures of your Ad</label>
-        <small>You can add 4 pictures</small>
+        <label class="control-label" for="fuAdPictures">Pictures of your Ad<br /><small>You can add 4 pictures</small></label><br />
         <div class="controls">
             <asp:FileUpload ID="fuAdPicture1" runat="server"/>
             <asp:FileUpload ID="fuAdPicture2" runat="server" />
@@ -59,7 +58,21 @@
             <asp:FileUpload ID="fuAdPicture4" runat="server" />
         </div>
       </div>
-
+      <legend>Your Details</legend>
+      <div class="control-group">
+        <label class="control-label" for="txtContactNo">Contact Number</label>
+        <div class="controls">
+          <asp:TextBox ID="txtContactNo" runat="server" placeHolder="e.g. '+923219570199'" TextMode="SingleLine"></asp:TextBox>
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txtContactNo" runat="server" ForeColor="Red" Text="*" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="txtAddress">Address(Optional)</label>
+        <div class="controls">
+          <asp:TextBox ID="txtAddress" runat="server" placeHolder="Type Address Here'" TextMode="MultiLine" MaxLength="100" Height="50px" Width="400px"></asp:TextBox>
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txtAddress" runat="server" ForeColor="Red" Text="*" />
+        </div>
+      </div>
       <div class="control-group">
         <div class="controls">
             <asp:Button ID="btnAddService" class="btn" runat="server" Text="Add Service" 

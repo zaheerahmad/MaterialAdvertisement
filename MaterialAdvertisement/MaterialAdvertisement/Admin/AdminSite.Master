@@ -32,7 +32,7 @@
                             <a class="brand" href="Admin.aspx?ctl=1"><i class="icon-home icon-black"></i>Control Panel</a>
                             <ul class="nav">
                             <li>
-                                <a href="Admin.aspx?ctl=5">Services</a>
+                                <a href="Admin.aspx?ctl=5">Ads</a>
                             </li>
                             <li>
                                 <a href="Admin.aspx?ctl=6">News</a>

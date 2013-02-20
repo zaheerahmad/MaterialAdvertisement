@@ -43,16 +43,20 @@
                         async: true,
                         cache: false,
                         success: function (msg) {
-                            alert("Done")
-                            alert(msg.d);
-//                            if (msg.d != "") {
-//                                alert(msg.name);
-//                               
-
-//                                var arrItems = msg.d.split("|");
-//                                window.location = "Admin/Admin.aspx?ctl=1&i=" + arrItems[0] + "&u='" + arrItems[1] + "'&n='" + arrItems[2] + "'";
-                            }
+//                            if (msg != null)
+//                            { alert(msg); }
+//                            else
+//                            { callback; }
                         }
+                        //                            alert(msg.d);
+                        //                            if (msg.d != "") {
+                        //                                alert(msg.name);
+                        //                               
+
+                        //                                var arrItems = msg.d.split("|");
+                        //                                window.location = "Admin/Admin.aspx?ctl=1&i=" + arrItems[0] + "&u='" + arrItems[1] + "'&n='" + arrItems[2] + "'";
+
+
                     });
                 }
             }
