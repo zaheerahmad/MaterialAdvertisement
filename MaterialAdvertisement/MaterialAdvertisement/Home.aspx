@@ -1,14 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MaterialAdvertisement.Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphFilterSideBar" runat="server">
-
+<html>
+<head>
 <script type="text/javascript">
-    $('table').children().remove();
+    $(function () {
 
-    $('table').append(data.html);
+      
+      
+        $('#dp3').datepicker().on('changeDate', function (ev) {
+            alert("khurramhere");
+            $('#dp3').datepicker('hide');
 
+
+        });
+
+
+    })
 </script>
-
+</head>
+<body>
     <div style="position:fixed">
     <legend>Filter Advertisements</legend>
     <form action="">
@@ -68,15 +79,19 @@
         <table class="table">
             <tr>
                 <td>
-                    <div id="datetimepicker1" class="input-append date">
+              <!--     <div id="datetimepicker1" class="input-append date">
                         <label class="control-label" for="startDate">Start Date</label>
                          
                           <input data-format="yyyy/dd/MM hh:mm:ss" value="" type="text" name="startDate"></input>
                          <span class="add-on">
                          <i data-time-icon="icon-time" data-date-icon="icon-calendar">
                          </i>
-                         </span>
-    
+                         </span>-->
+                    
+                   <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                      <input class="span2" size="16" type="text" value="12-02-2012">
+                      <span class="add-on"><i class="icon-th"></i></span>
+                   </div>
                     </div>
                 </td>
             </tr>
@@ -97,224 +112,4 @@
     </form>
     </div>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="cphBodyContent" runat="server">
-    <legend>Welcome to Materials Advertisement WebSite</legend>
-      <h1>Materials Advertisement</h1>
-      <table class="table table-hover">
-        <tr>
-            <th>Material Name</th>
-            <th>Material Type</th>
-            <th>Image</th>
-            <th>Posted On (Date)</th>
-            <th>Posted By (Full Name)</th>
-            <th>Status</th>
-            <th>&nbsp;</th>
-        </tr>
-        <tr>
-            <td>Material Name A</td>
-            <td>Material Type A</td>
-            <td></td>
-            <td>10-12-2012</td>
-            <td>Zaheer Ahmad</td>
-            <td><i class="icon-ok"></i>Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name B</td>
-            <td>Material Type B</td>
-            <td></td>
-            <td>2-19-2013</td>
-            <td>Khurram Farooq</td>
-            <td><i class="icon-flag"></i>Not Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name A</td>
-            <td>Material Type A</td>
-            <td></td>
-            <td>10-12-2012</td>
-            <td>Zaheer Ahmad</td>
-            <td><i class="icon-ok"></i>Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name B</td>
-            <td>Material Type B</td>
-            <td></td>
-            <td>2-19-2013</td>
-            <td>Khurram Farooq</td>
-            <td><i class="icon-flag"></i>Not Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name A</td>
-            <td>Material Type A</td>
-            <td></td>
-            <td>10-12-2012</td>
-            <td>Zaheer Ahmad</td>
-            <td><i class="icon-ok"></i>Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name B</td>
-            <td>Material Type B</td>
-            <td></td>
-            <td>2-19-2013</td>
-            <td>Khurram Farooq</td>
-            <td><i class="icon-flag"></i>Not Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name A</td>
-            <td>Material Type A</td>
-            <td></td>
-            <td>10-12-2012</td>
-            <td>Zaheer Ahmad</td>
-            <td><i class="icon-ok"></i>Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name B</td>
-            <td>Material Type B</td>
-            <td></td>
-            <td>2-19-2013</td>
-            <td>Khurram Farooq</td>
-            <td><i class="icon-flag"></i>Not Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name A</td>
-            <td>Material Type A</td>
-            <td></td>
-            <td>10-12-2012</td>
-            <td>Zaheer Ahmad</td>
-            <td><i class="icon-ok"></i>Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name B</td>
-            <td>Material Type B</td>
-            <td></td>
-            <td>2-19-2013</td>
-            <td>Khurram Farooq</td>
-            <td><i class="icon-flag"></i>Not Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name A</td>
-            <td>Material Type A</td>
-            <td></td>
-            <td>10-12-2012</td>
-            <td>Zaheer Ahmad</td>
-            <td><i class="icon-ok"></i>Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name B</td>
-            <td>Material Type B</td>
-            <td></td>
-            <td>2-19-2013</td>
-            <td>Khurram Farooq</td>
-            <td><i class="icon-flag"></i>Not Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name A</td>
-            <td>Material Type A</td>
-            <td></td>
-            <td>10-12-2012</td>
-            <td>Zaheer Ahmad</td>
-            <td><i class="icon-ok"></i>Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name B</td>
-            <td>Material Type B</td>
-            <td></td>
-            <td>2-19-2013</td>
-            <td>Khurram Farooq</td>
-            <td><i class="icon-flag"></i>Not Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name A</td>
-            <td>Material Type A</td>
-            <td></td>
-            <td>10-12-2012</td>
-            <td>Zaheer Ahmad</td>
-            <td><i class="icon-ok"></i>Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name B</td>
-            <td>Material Type B</td>
-            <td></td>
-            <td>2-19-2013</td>
-            <td>Khurram Farooq</td>
-            <td><i class="icon-flag"></i>Not Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name A</td>
-            <td>Material Type A</td>
-            <td></td>
-            <td>10-12-2012</td>
-            <td>Zaheer Ahmad</td>
-            <td><i class="icon-ok"></i>Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name B</td>
-            <td>Material Type B</td>
-            <td></td>
-            <td>2-19-2013</td>
-            <td>Khurram Farooq</td>
-            <td><i class="icon-flag"></i>Not Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name A</td>
-            <td>Material Type A</td>
-            <td></td>
-            <td>10-12-2012</td>
-            <td>Zaheer Ahmad</td>
-            <td><i class="icon-ok"></i>Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name B</td>
-            <td>Material Type B</td>
-            <td></td>
-            <td>2-19-2013</td>
-            <td>Khurram Farooq</td>
-            <td><i class="icon-flag"></i>Not Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name A</td>
-            <td>Material Type A</td>
-            <td></td>
-            <td>10-12-2012</td>
-            <td>Zaheer Ahmad</td>
-            <td><i class="icon-ok"></i>Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-        <tr>
-            <td>Material Name B</td>
-            <td>Material Type B</td>
-            <td></td>
-            <td>2-19-2013</td>
-            <td>Khurram Farooq</td>
-            <td><i class="icon-flag"></i>Not Sold</td>
-            <td><a href="#">Check Details</a></td>
-        </tr>
-       </table>
-       <ul class="pager">
-          <li class="previous">
-            <a href="#">&larr; Older</a>
-          </li>
-          <li class="next">
-            <a href="#">Newer &rarr;</a>
-          </li>
-        </ul>
-</asp:Content>
+
