@@ -40,7 +40,7 @@ namespace MaterialAdvertisement.WebServices
                                                 <td>10-12-2012</td>
                                                 <td>Zaheer Ahmad</td>
                                                 <td><i class='icon-ok'></i>Sold</td>
-                                                <td><a onClick='getMaterialDetail()'>Details</a></td>
+                                                <td><button type='submit' class='btn' onClick='getMaterialDetail()'>Details</button></td>
                                                 <td><img height='100px' width='100px' alt='no img avaiable'></img></td>
                                                 </tr>
                                                 </div>");
@@ -131,7 +131,25 @@ namespace MaterialAdvertisement.WebServices
         <address>
             <strong>Full Name</strong><br>
             <a href='mailto:#'>first.last@example.com</a>
-        </address>");
+        </address>
+		<div class='page-header'>
+			<h4>
+				Suggestions for use
+			</h4>
+		</div>
+        <div class='commentBox'>
+            
+        </div>
+        <div class='suggestionArea'>
+            
+            <div class='control'>
+                    
+                    <textarea name='suggestionBox' style='width: 500px;' placeholder='Suggestions'></textarea></br>
+                    <a class='btn btn-mini btn-primary sugst' type='button'>Suggest</a>
+            </div>
+        </div>
+		
+		");
                           
             ServiceResponce serviceResponce = new ServiceResponce
             {
