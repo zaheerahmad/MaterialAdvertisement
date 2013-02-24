@@ -131,15 +131,81 @@
     <Content Include="assets\bootstrap\js\bootstrap.min.js" />
     <Content Include="assets\datepicker\css\datepicker.css" />
     <Content Include="assets\datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="assets\images\caption1.jpg" />
+    <Content Include="assets\images\caption2.gif" />
+    <Content Include="assets\images\caption3.gif" />
+    <Content Include="assets\images\caption4.gif" />
+    <Content Include="assets\images\Control Panel.png" />
+    <Content Include="assets\images\image-slider-1.jpg" />
+    <Content Include="assets\images\image-slider-2.jpg" />
+    <Content Include="assets\images\image-slider-3.jpg" />
+    <Content Include="assets\images\image-slider-4.jpg" />
+    <Content Include="assets\images\image-slider-5.jpg" />
+    <Content Include="assets\images\Material Advertisement.jpg" />
+    <Content Include="assets\images\slider-1.jpg" />
+    <Content Include="assets\images\slider-2.jpg" />
+    <Content Include="assets\images\slider-3.jpg" />
+    <Content Include="assets\images\slider-4.jpg" />
+    <Content Include="assets\images\thumb-1.gif" />
+    <Content Include="assets\images\thumb-2.gif" />
+    <Content Include="assets\images\thumb-3.gif" />
+    <Content Include="assets\images\thumb-4.gif" />
+    <Content Include="assets\images\thumb1.jpg" />
+    <Content Include="assets\images\thumb2.jpg" />
+    <Content Include="assets\images\thumb3.jpg" />
+    <Content Include="assets\images\thumb4.jpg" />
+    <Content Include="assets\images\thumb5.jpg" />
     <Content Include="assets\Scripts\jquery.leanModal.min.js" />
     <Content Include="assets\Scripts\__MACOSX\._jquery.leanModal.min.js" />
     <Content Include="assets\Styles\Site.css" />
     <Content Include="assets\test.js" />
+    <Content Include="assets\themes\1\bullet.png" />
+    <Content Include="assets\themes\1\js-image-slider.css" />
+    <Content Include="assets\themes\1\js-image-slider.js" />
+    <Content Include="assets\themes\1\loading.gif" />
+    <Content Include="assets\themes\1\ribbon.png" />
+    <Content Include="assets\themes\2\js-image-slider.css" />
+    <Content Include="assets\themes\2\js-image-slider.js" />
+    <Content Include="assets\themes\2\loading.gif" />
+    <Content Include="assets\themes\3\active-bg.png" />
+    <Content Include="assets\themes\3\js-image-slider.css" />
+    <Content Include="assets\themes\3\js-image-slider.js" />
+    <Content Include="assets\themes\3\loading.gif" />
+    <Content Include="assets\themes\3\thumbs-bar.gif" />
+    <Content Include="assets\themes\4\active-bg.png" />
+    <Content Include="assets\themes\4\bullet.png" />
+    <Content Include="assets\themes\4\js-image-slider.css" />
+    <Content Include="assets\themes\4\js-image-slider.js" />
+    <Content Include="assets\themes\4\loading.gif" />
+    <Content Include="assets\themes\4\navButtons.gif" />
+    <Content Include="assets\themes\4\navButtons2.gif" />
+    <Content Include="assets\themes\4\thumbs-bar.gif" />
+    <Content Include="assets\themes\5\js-image-slider.css" />
+    <Content Include="assets\themes\5\js-image-slider.js" />
+    <Content Include="assets\themes\5\loading.gif" />
+    <Content Include="assets\themes\6\bullet.png" />
+    <Content Include="assets\themes\6\js-image-slider.css" />
+    <Content Include="assets\themes\6\js-image-slider.js" />
+    <Content Include="assets\themes\6\loading.gif" />
+    <Content Include="assets\themes\6\mcVideoPlugin.js" />
+    <Content Include="assets\themes\6\video.png" />
+    <Content Include="assets\themes\7\bullet.png" />
+    <Content Include="assets\themes\7\js-image-slider.css" />
+    <Content Include="assets\themes\7\js-image-slider.js" />
+    <Content Include="assets\themes\7\loading.gif" />
+    <Content Include="assets\themes\8\bullet.png" />
+    <Content Include="assets\themes\8\js-image-slider.css" />
+    <Content Include="assets\themes\8\js-image-slider.js" />
+    <Content Include="assets\themes\8\loading.gif" />
+    <Content Include="assets\themes\8\tooltip.css" />
+    <Content Include="assets\themes\8\tooltip.js" />
     <Content Include="CodeGen\ClassGenerator.ascx" />
     <Content Include="CodeGen\ConfigBuilder.ascx" />
     <Content Include="CodeGen\Configuration.aspx" />
     <Content Include="CodeGen\Generators.aspx" />
     <Content Include="CodeGen\style.css" />
+    <Content Include="DatePicker\css\datepicker.css" />
+    <Content Include="DatePicker\js\bootstrap-datepicker.js" />
     <Content Include="Global.asax" />
     <Content Include="assets\Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="assets\Scripts\jquery-1.4.1.js" />
@@ -155,6 +221,7 @@
     </Content>
     <Content Include="Home.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="WebServices\AdvertisementContent.asmx" />
     <Content Include="WebServices\LoginWebService.asmx" />
   </ItemGroup>
   <ItemGroup>
@@ -315,6 +382,7 @@
     <Compile Include="Admin\Model\Project.cs" />
     <Compile Include="Admin\Model\Service.cs" />
     <Compile Include="Admin\Model\ToolsAndTechnique.cs" />
+    <Compile Include="BO\ServiceResponce.cs" />
     <Compile Include="CodeGen\ClassGenerator.ascx.cs">
       <DependentUpon>ClassGenerator.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -350,6 +418,7 @@
     <Compile Include="CodeGen\MasterPage.master.designer.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
     </Compile>
+    <Compile Include="Common\HtmlStrings.cs" />
     <Compile Include="Common\JsonHelper.cs" />
     <Compile Include="Common\Person.cs" />
     <Compile Include="Controller\UserController.cs" />
@@ -378,6 +447,10 @@
     </Compile>
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\AdvertisementContent.asmx.cs">
+      <DependentUpon>AdvertisementContent.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="WebServices\LoginWebService.asmx.cs">
       <DependentUpon>LoginWebService.asmx</DependentUpon>
