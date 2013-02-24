@@ -155,6 +155,7 @@
     <Content Include="assets\images\thumb3.jpg" />
     <Content Include="assets\images\thumb4.jpg" />
     <Content Include="assets\images\thumb5.jpg" />
+    <Content Include="assets\images\unknown.jpg" />
     <Content Include="assets\Scripts\jquery.leanModal.min.js" />
     <Content Include="assets\Scripts\__MACOSX\._jquery.leanModal.min.js" />
     <Content Include="assets\Styles\Site.css" />
@@ -475,7 +476,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58747</DevelopmentServerPort>
+          <DevelopmentServerPort>52701</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

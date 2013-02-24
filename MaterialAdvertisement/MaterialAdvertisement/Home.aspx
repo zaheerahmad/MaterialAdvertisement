@@ -6,15 +6,7 @@
 <script type="text/javascript">
     $(function () {
 
-      
-      
-        $('#dp3').datepicker().on('changeDate', function (ev) {
-            alert("khurramhere");
-            $('#dp3').datepicker('hide');
-
-
-        });
-
+     
 
     })
 </script>
