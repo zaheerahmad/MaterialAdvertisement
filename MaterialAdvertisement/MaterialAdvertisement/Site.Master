@@ -20,7 +20,7 @@
                     suggestion.replace(/\s/g, '')
                     if (suggestion.replace(/\s/g, '').length != 0) {
                         //$('div.commentBox').append('<div style="background-color:#f5f7fa;display: block;"><div class="comment" ><img src="assets/images/unknown.jpg"></img></div>&nbsp&nbsp<div style="padding-left:10px;" class="comment"><span>' + suggestion + '</span></div> </div>');
-                        $('div.commentBox').append('<div class="row" style="background-color:#f5f7fa;"><div class="span4" style="display:inline-block;"><img src="assets/images/unknown.jpg"></img></div><div style="display:inline-block;" class="span6">' + suggestion + '</div></div>')
+                        $('div.commentBox').append('<table class="table table-hover" width="100%"><tr><td width="10%"><img src="assets/images/unknown.jpg"></img><br />Anonymous</td><td width="90%"><div style="display:inline-block;" class="span6">' + suggestion + '</div></td></tr></table>')
                         $('textarea[name="suggestionBox"]').val(' ');
                         if (suggestionBox.hasClass('error')) {
                             suggestionBox.removeClass('error');
@@ -71,15 +71,11 @@
                             if (obj.serviceErrorCode == 0) {
                                 contentHtml.append(obj.html);
                                 alert(contentHtml);
-
                             }
-
                         }
-
                     });
                 }
             }
-			
 		function getAllMaterialContent(){
 				var contentHtml = $("#currentContent");
 				$.ajax({
@@ -92,16 +88,11 @@
                         success: function (msg) {
 							contentHtml.html('');
                             var obj = jQuery.parseJSON(msg.d);
-                           
                             if (obj.serviceErrorCode == 0) {
-                                contentHtml.append(obj.html);
-                               
+                                contentHtml.append(obj.html);  
                             }
-
                         }
-
                     });
-		
 		}
 		function getMaterialDetail(){
 			
@@ -194,9 +185,6 @@
                     <!-- .nav, .navbar-search, .navbar-form, etc -->
                     <ul class="nav">
                       <li class="active"> <a class="home" href='#' onClick="getAllMaterialContent()">Home</a></li>
-                      <li><a href="#">Link</a></li>
-                      <li><a href="#">Link</a></li>
-              
                     </ul>
                     <ul class="nav pull-right">
                         <li><a id="loginAnchor" href="#">Login</a></li>

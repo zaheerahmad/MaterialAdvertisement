@@ -40,8 +40,8 @@ namespace MaterialAdvertisement.WebServices
                                                 <td>10-12-2012</td>
                                                 <td>Zaheer Ahmad</td>
                                                 <td><i class='icon-ok'></i>Sold</td>
+                                                <td><img src='../assets/images/thumb1.jpg' alt='no img avaiable'></img></td>
                                                 <td><button type='submit' class='btn' onClick='getMaterialDetail()'>Details</button></td>
-                                                <td><img height='100px' width='100px' alt='no img avaiable'></img></td>
                                                 </tr>
                                                 </div>");
 
@@ -52,12 +52,12 @@ namespace MaterialAdvertisement.WebServices
                                                 <td>10-12-2012</td>
                                                 <td>Khurram Farooq</td>
                                                 <td><i class='icon-ok'></i>Sold</td>
-                                                <td><a href='#'>Details</a></td>
-                                                <td><img height='100px' width='100px' alt='no img avaiable'></img></td>
+                                                <td><img src='../assets/images/thumb1.jpg' alt='no img avaiable'></img></td>
+                                                <td><button type='submit' class='btn' onClick='getMaterialDetail()'>Details</button></td>
                                                 </tr>
                                                 </div></table><div class='row'><ul class='pager'>
                                                 <li class='previous'>
-                                                <a href='#' onClick='getMaterialDetail()'>&larr; Older</a>
+                                                <a href='#' onClick=''>&larr; Older</a>
                                                 </li>
                                                 <li class='next'>
                                                 <a href='#'>Newer &rarr;</a>
@@ -138,6 +138,9 @@ namespace MaterialAdvertisement.WebServices
 			</h4>
 		</div>
         <div class='commentBox'>
+            <table class='table table-hover'>
+                
+            </table>
             
         </div>
         <div class='suggestionArea'>
