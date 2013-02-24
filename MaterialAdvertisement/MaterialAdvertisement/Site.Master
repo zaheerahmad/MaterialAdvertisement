@@ -16,7 +16,7 @@
 
                
 
-                $('.datepicker').datepicker();
+//                $('.datepicker').datepicker();
                 $('a#loginAnchor').click(function () {
 
                     $("#panel").slideToggle("slow");
@@ -170,7 +170,7 @@
                   <div class="nav-collapse collapse">
                     <!-- .nav, .navbar-search, .navbar-form, etc -->
                     <ul class="nav">
-                      <li class="active"> <a class="home" onClick="getAllMaterialContent()">Home</a></li>
+                      <li class="active"> <a class="home" href='#' onClick="getAllMaterialContent()">Home</a></li>
                       <li><a href="#">Link</a></li>
                       <li><a href="#">Link</a></li>
               

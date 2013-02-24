@@ -57,7 +57,7 @@ namespace MaterialAdvertisement.WebServices
                                                 </tr>
                                                 </div></table><div class='row'><ul class='pager'>
                                                 <li class='previous'>
-                                                <a onClick='getMaterialDetail()'>&larr; Older</a>
+                                                <a href='#' onClick='getMaterialDetail()'>&larr; Older</a>
                                                 </li>
                                                 <li class='next'>
                                                 <a href='#'>Newer &rarr;</a>

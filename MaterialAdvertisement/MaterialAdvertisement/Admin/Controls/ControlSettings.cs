@@ -11,10 +11,10 @@ namespace AdminSite.Controls
         {
             Login = 0,
             Welcome = 1,
-            AddServices = 2,
-            ManageServices = 3,
+            PostAd = 2,
+            ManageAd = 3,
             AddNews = 4,
-            Services = 5,
+            Ad = 5,
             News = 6,
             ManageNews = 7,
             Client = 8,
@@ -37,17 +37,17 @@ namespace AdminSite.Controls
                 case ControlName.Welcome:
                     controlName = "ctlWelcome";
                     break;
-                case ControlName.AddServices:
-                    controlName = "ctlAddServices";
+                case ControlName.PostAd:
+                    controlName = "ctlPostAd";
                     break;
-                case ControlName.ManageServices:
-                    controlName = "ctlManageServices";
+                case ControlName.ManageAd:
+                    controlName = "ctlManageAd";
                     break;
                 case ControlName.AddNews:
                     controlName = "ctlAddNews";
                     break;
-                case ControlName.Services:
-                    controlName = "ctlServices";
+                case ControlName.Ad:
+                    controlName = "ctlAd";
                     break;
                 case ControlName.News:
                     controlName = "ctlNews";
@@ -83,7 +83,7 @@ namespace AdminSite.Controls
                     controlName = "ctlManagePortfolio";
                     break;
                 default:
-                    controlName = "ctlLogin";
+                    controlName = "ctlWelcome";
                     break;
             }
             controlName += ext;

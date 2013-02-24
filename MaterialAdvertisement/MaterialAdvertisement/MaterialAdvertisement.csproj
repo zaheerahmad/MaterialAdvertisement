@@ -103,18 +103,18 @@
     <Content Include="Admin\Controls\ctlAddNews.ascx" />
     <Content Include="Admin\Controls\ctlAddPortfolio.ascx" />
     <Content Include="Admin\Controls\ctlAddProject.ascx" />
-    <Content Include="Admin\Controls\ctlAddServices.ascx" />
+    <Content Include="Admin\Controls\ctlPostAd.ascx" />
     <Content Include="Admin\Controls\ctlClient.ascx" />
     <Content Include="Admin\Controls\ctlLogin.ascx" />
     <Content Include="Admin\Controls\ctlManageClient.ascx" />
     <Content Include="Admin\Controls\ctlManageNews.ascx" />
     <Content Include="Admin\Controls\ctlManagePortfolio.ascx" />
     <Content Include="Admin\Controls\ctlManageProject.ascx" />
-    <Content Include="Admin\Controls\ctlManageServices.ascx" />
+    <Content Include="Admin\Controls\ctlManageAd.ascx" />
     <Content Include="Admin\Controls\ctlNews.ascx" />
     <Content Include="Admin\Controls\ctlPortfolio.ascx" />
     <Content Include="Admin\Controls\ctlProject.ascx" />
-    <Content Include="Admin\Controls\ctlServices.ascx" />
+    <Content Include="Admin\Controls\ctlAd.ascx" />
     <Content Include="Admin\Controls\ctlWelcome.ascx" />
     <Content Include="Admin\Global.asax" />
     <Content Include="App_Data\MaterialAdvertisement.mdf" />
@@ -273,12 +273,12 @@
     <Compile Include="Admin\Controls\ctlAddProject.ascx.designer.cs">
       <DependentUpon>ctlAddProject.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Controls\ctlAddServices.ascx.cs">
-      <DependentUpon>ctlAddServices.ascx</DependentUpon>
+    <Compile Include="Admin\Controls\ctlPostAd.ascx.cs">
+      <DependentUpon>ctlPostAd.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Controls\ctlAddServices.ascx.designer.cs">
-      <DependentUpon>ctlAddServices.ascx</DependentUpon>
+    <Compile Include="Admin\Controls\ctlPostAd.ascx.designer.cs">
+      <DependentUpon>ctlPostAd.ascx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Controls\ctlClient.ascx.cs">
       <DependentUpon>ctlClient.ascx</DependentUpon>
@@ -322,12 +322,12 @@
     <Compile Include="Admin\Controls\ctlManageProject.ascx.designer.cs">
       <DependentUpon>ctlManageProject.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Controls\ctlManageServices.ascx.cs">
-      <DependentUpon>ctlManageServices.ascx</DependentUpon>
+    <Compile Include="Admin\Controls\ctlManageAd.ascx.cs">
+      <DependentUpon>ctlManageAd.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Controls\ctlManageServices.ascx.designer.cs">
-      <DependentUpon>ctlManageServices.ascx</DependentUpon>
+    <Compile Include="Admin\Controls\ctlManageAd.ascx.designer.cs">
+      <DependentUpon>ctlManageAd.ascx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Controls\ctlNews.ascx.cs">
       <DependentUpon>ctlNews.ascx</DependentUpon>
@@ -350,12 +350,12 @@
     <Compile Include="Admin\Controls\ctlProject.ascx.designer.cs">
       <DependentUpon>ctlProject.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Controls\ctlServices.ascx.cs">
-      <DependentUpon>ctlServices.ascx</DependentUpon>
+    <Compile Include="Admin\Controls\ctlAd.ascx.cs">
+      <DependentUpon>ctlAd.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Controls\ctlServices.ascx.designer.cs">
-      <DependentUpon>ctlServices.ascx</DependentUpon>
+    <Compile Include="Admin\Controls\ctlAd.ascx.designer.cs">
+      <DependentUpon>ctlAd.ascx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Controls\ctlWelcome.ascx.cs">
       <DependentUpon>ctlWelcome.ascx</DependentUpon>
@@ -418,7 +418,6 @@
     <Compile Include="CodeGen\MasterPage.master.designer.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
     </Compile>
-    <Compile Include="Common\HtmlStrings.cs" />
     <Compile Include="Common\JsonHelper.cs" />
     <Compile Include="Common\Person.cs" />
     <Compile Include="Controller\UserController.cs" />

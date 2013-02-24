@@ -12,10 +12,10 @@ namespace AdminSite.Controls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string name = Utility.GetParameter("n");
-            int id = Utility.GetIntParameter("i");
+            //string name = Utility.GetParameter("n");
+            //int id = Utility.GetIntParameter("i");
 
-            MainHeading.InnerText = "Welcome " + name + " to your Control Pannel" + "; Your Id is: " + id;
+            //MainHeading.InnerText = "Welcome " + name + " to your Control Pannel" + "; Your Id is: " + id;
         }
     }
 }

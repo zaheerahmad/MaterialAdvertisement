@@ -19,10 +19,10 @@ namespace AdminSite
         {
             Login = 0,
             Welcome = 1,
-            AddServices = 2,
-            ManageServices = 3,
+            PostAd = 2,
+            ManageAd = 3,
             AddNews = 4,
-            Services = 5,
+            Ad = 5,
             News = 6,
             ManageNews = 7,
             Client = 8,
@@ -82,16 +82,16 @@ namespace AdminSite
                 case PageLink.Welcome:
                     qry = "ctl=1";
                     break;
-                case PageLink.AddServices:
+                case PageLink.PostAd:
                     qry = "ctl=2";
                     break;
-                case PageLink.ManageServices:
+                case PageLink.ManageAd:
                     qry = "ctl=3";
                     break;
                 case PageLink.AddNews:
                     qry = "ctl=4";
                     break;
-                case PageLink.Services:
+                case PageLink.Ad:
                     qry = "ctl=5";
                     break;
                 case PageLink.News:

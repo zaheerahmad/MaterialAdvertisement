@@ -8,3 +8,8 @@ D:\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\bin\
 D:\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\ResolveAssemblyReference.cache
 D:\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\MaterialAdvertisement.dll
 D:\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\MaterialAdvertisement.pdb
+E:\Work\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\MaterialAdvertisement.dll
+E:\Work\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\obj\Debug\MaterialAdvertisement.pdb
+E:\Work\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\bin\MaterialAdvertisement.dll
+E:\Work\Material Advertisement\trunk\MaterialAdvertisement\MaterialAdvertisement\bin\MaterialAdvertisement.pdb

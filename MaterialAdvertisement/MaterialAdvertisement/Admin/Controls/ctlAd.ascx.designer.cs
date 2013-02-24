@@ -10,6 +10,6 @@
 namespace AdminSite.Controls {
     
     
-    public partial class ctlWelcome {
+    public partial class ctlAd {
     }
 }
