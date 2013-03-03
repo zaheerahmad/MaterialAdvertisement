@@ -6,7 +6,7 @@
 <script type="text/javascript">
     $(function () {
 
-     
+      
 
     })
 </script>
@@ -103,5 +103,11 @@
         </div>
     </form>
     </div>
+</asp:Content>
+<asp:Content ID="content2" runat="server" ContentPlaceHolderID="currenContent">
+
+
+&nbsp;<asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+
 </asp:Content>
 

@@ -142,6 +142,7 @@
     <Content Include="assets\images\image-slider-4.jpg" />
     <Content Include="assets\images\image-slider-5.jpg" />
     <Content Include="assets\images\Material Advertisement.jpg" />
+    <Content Include="assets\images\photo.jpg" />
     <Content Include="assets\images\slider-1.jpg" />
     <Content Include="assets\images\slider-2.jpg" />
     <Content Include="assets\images\slider-3.jpg" />
@@ -211,6 +212,10 @@
     <Content Include="assets\Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="assets\Scripts\jquery-1.4.1.js" />
     <Content Include="assets\Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Main\Ctl\ctlDetailMaterial.ascx" />
+    <Content Include="Main\Ctl\ctlInfoMaterial.ascx" />
+    <Content Include="Main\Ctl\ctlInfoMaterialSecond.ascx" />
+    <Content Include="Main\MainPages\mainContent.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -366,13 +371,13 @@
       <DependentUpon>ctlWelcome.ascx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Controls\PorfolioCollection.cs" />
-    <Compile Include="Admin\Dao\ClientController.cs" />
-    <Compile Include="Admin\Dao\LoginController.cs" />
-    <Compile Include="Admin\Dao\NewsController.cs" />
-    <Compile Include="Admin\Dao\PortfolioController.cs" />
-    <Compile Include="Admin\Dao\ProjectController.cs" />
-    <Compile Include="Admin\Dao\ServiceController.cs" />
-    <Compile Include="Admin\Dao\ToolsAndTechniqueController.cs" />
+    <Compile Include="Admin\Model\Dao\ClientController.cs" />
+    <Compile Include="Admin\Model\Dao\LoginController.cs" />
+    <Compile Include="Admin\Model\Dao\NewsController.cs" />
+    <Compile Include="Admin\Model\Dao\PortfolioController.cs" />
+    <Compile Include="Admin\Model\Dao\ProjectController.cs" />
+    <Compile Include="Admin\Model\Dao\ServiceController.cs" />
+    <Compile Include="Admin\Model\Dao\ToolsAndTechniqueController.cs" />
     <Compile Include="Admin\Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -424,6 +429,35 @@
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Ctl\ctlDetailMaterial.ascx.cs">
+      <DependentUpon>ctlDetailMaterial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Ctl\ctlDetailMaterial.ascx.designer.cs">
+      <DependentUpon>ctlDetailMaterial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Ctl\ctlInfoMaterial.ascx.cs">
+      <DependentUpon>ctlInfoMaterial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Ctl\ctlInfoMaterial.ascx.designer.cs">
+      <DependentUpon>ctlInfoMaterial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Ctl\ctlInfoMaterialSecond.ascx.cs">
+      <DependentUpon>ctlInfoMaterialSecond.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Ctl\ctlInfoMaterialSecond.ascx.designer.cs">
+      <DependentUpon>ctlInfoMaterialSecond.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainCtrlSetting.cs" />
+    <Compile Include="Main\MainPages\mainContent.aspx.cs">
+      <DependentUpon>mainContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\MainPages\mainContent.aspx.designer.cs">
+      <DependentUpon>mainContent.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

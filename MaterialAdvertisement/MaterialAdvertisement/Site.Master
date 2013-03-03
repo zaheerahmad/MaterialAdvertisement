@@ -9,20 +9,20 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
        <!--<script src="assets/Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>-->
 		<link href="assets/themes/2/js-image-slider.css" rel="stylesheet" type="text/css" />
-		<script src="assets/themes/2/js-image-slider.js" type="text/javascript">
+		<script src="assets/themes/2/js-image-slider.js" type="text/javascript"></script>
         <script src="DatePicker/js/bootstrap-datepicker.js"></script>
-        <script src="DatePicker/css/datepicker.css"></script>
+        <link href="DatePicker/css/datepicker.css" rel="stylesheet" type="text/css" />      
         <script type="text/javascript">
             $(document).ready(function () {
-                $('a.sugst').live('click', function () {
+                $('a.sugst').live('click', function () {                  
                     var suggestionBox = $('textarea[name="suggestionBox"]');
                     var suggestion = suggestionBox.val();
                     suggestion.replace(/\s/g, '')
                     if (suggestion.replace(/\s/g, '').length != 0) {
                         // $('div.commentBox').append('<div style="background-color:#f5f7fa;display: block;"><div class="comment" ><img src="assets/images/unknown.jpg"></img></div>&nbsp&nbsp<div style="padding-left:10px;" class="comment"><span>' + suggestion + '</span></div> </div>');
                         // $('div.commentBox').append('<table class="table table-hover" width="100%"><tr><td width="10%"><img src="assets/images/unknown.jpg"></img><br />Anonymous</td><td width="70%"><div style="display:inline-block;" class="span6">' + suggestion + '</div></td></tr></table>')
-                        $('div.commentBox').append('<div class="container"  style="background-color:#f5f7fa;width:100%;margin-top:10px;" ><div class="row"><div class="span0"><img src="assets/images/unknown.jpg"></img></div><div class="span3 offset-6"><p style="color: #3b5998;"><b>Anonymous</b></p></div><div class="span6"><span style="color: #333;font-size: 13px;">' + suggestion + '</span></div></div></div></div>');
-
+                      //  $('div.commentBox').append('<div class="container"  style="background-color:#f5f7fa;width:100%;margin-top:10px;" ><div class="row"><div class="span0"><img src="assets/images/unknown.jpg"></img></div><div class="span3 offset-6"><p style="color: #3b5998;"><b>Anonymous</b></p></div><div class="span6"><span style="color: #333;font-size: 13px;">' + suggestion + '</span></div></div></div></div>');
+                        $('div.commentBox').append('<div class="media" style="background-color:#f5f7fa">  <a class="pull-left" href="#">    <img class="media-object" src="assets/images/unknown.jpg">  </a>  <div class="media-body">    <h4 class="media-heading" style="color:#467ed6;">Anonymous</h4>  <div class="media">' + suggestion + ' </div>  </div>    </div>');
                         $('textarea[name="suggestionBox"]').val(' ');
                         if (suggestionBox.hasClass('error')) {
                             suggestionBox.removeClass('error');
@@ -43,7 +43,7 @@
                 $('a#signUpAnchor').click(function () {
                     $('a#signUpAnchor').parent().addClass('active');
                 });
-                getAllMaterialContent();
+                //  getAllMaterialContent();
 
             });
         </script>
@@ -128,14 +128,33 @@
             background-color:#F8F8F8;
             border:solid 1px #000000;
             }
+            .infoDiv
+            {
+              border-bottom: 1px dotted #9E9E9E;
+              margin-top: 19px;
+            }
+            .priceDiv
+            {
+              margin-left: 55px;
+              color: #339304;
+            }
             #panel
             {
             padding:50px;
             display:none;
             }
+            ul
+            {
+                list-style-type: none;
+            }
 			.materialInfo{
 			padding:30px;
 			
+			}
+			.imgInfo
+			{
+			    width:100px;
+			    height:75px;
 			}
 			div.comment
 			{			
@@ -186,7 +205,8 @@
                   <div class="nav-collapse collapse">
                     <!-- .nav, .navbar-search, .navbar-form, etc -->
                     <ul class="nav">
-                      <li class="active"> <a class="home" href='#' onClick="getAllMaterialContent()">Home</a></li>
+                    <!--  <li class="active"> <a class="home" href='#' onClick="getAllMaterialContent()">Home</a></li>-->
+                      <li class="active"> <a class="home" href='../../Home.aspx?ctl=19' >Home</a></li>
                     </ul>
                     <ul class="nav pull-right">
                         <li><a id="loginAnchor" href="#">Login</a></li>
@@ -246,6 +266,11 @@
                 </div>
                 <div class="span9" id="currentContent">
                     <%--Body Content Area--%>
+
+                    <asp:ContentPlaceHolder ID="currenContent" runat="server">
+                        
+                    
+                    </asp:ContentPlaceHolder>
                   
                 </div>
             </div>
