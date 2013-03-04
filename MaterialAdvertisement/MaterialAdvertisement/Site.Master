@@ -135,7 +135,7 @@
             }
             .priceDiv
             {
-              margin-left: 55px;
+              margin-left: 115px;
               color: #339304;
             }
             #panel
@@ -147,9 +147,12 @@
             {
                 list-style-type: none;
             }
-			.materialInfo{
-			padding:30px;
-			
+			.materialInfo{			    
+			    padding:30px;			
+			}
+			.moreInfo
+			{
+			    margin-left: 90px;
 			}
 			.imgInfo
 			{
@@ -259,12 +262,12 @@
                 <%--Logo Or Image Slider here on Main Page--%>
             </div>
             <div class="row">
-                <div class="span3">
+                <div class="span3" style="background-color:#f5f7fa">
                     <%--Side Bar For Filter Search--%>
                     <asp:ContentPlaceHolder ID="cphFilterSideBar" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
-                <div class="span9" id="currentContent">
+                <div class="span9"  id="currentContent">
                     <%--Body Content Area--%>
 
                     <asp:ContentPlaceHolder ID="currenContent" runat="server">

@@ -1,18 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MaterialAdvertisement.Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphFilterSideBar" runat="server">
-<html>
-<head>
-<script type="text/javascript">
-    $(function () {
 
-      
-
-    })
-</script>
-</head>
-<body>
-    <div style="position:fixed">
+    <div style="position:fixed;background-color:#f5f7fa;margin-top: 36px;">
     <legend>Filter Advertisements</legend>
     <form action="">
         <table class="table">

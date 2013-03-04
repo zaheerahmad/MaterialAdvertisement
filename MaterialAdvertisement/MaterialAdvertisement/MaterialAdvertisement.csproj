@@ -131,6 +131,7 @@
     <Content Include="assets\bootstrap\js\bootstrap.min.js" />
     <Content Include="assets\datepicker\css\datepicker.css" />
     <Content Include="assets\datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="assets\images\1201302-74275-crane-carrying-waste-material-at-recycling-center.jpg" />
     <Content Include="assets\images\caption1.jpg" />
     <Content Include="assets\images\caption2.gif" />
     <Content Include="assets\images\caption3.gif" />
@@ -143,6 +144,7 @@
     <Content Include="assets\images\image-slider-5.jpg" />
     <Content Include="assets\images\Material Advertisement.jpg" />
     <Content Include="assets\images\photo.jpg" />
+    <Content Include="assets\images\ScrapMetalRecycling.jpg" />
     <Content Include="assets\images\slider-1.jpg" />
     <Content Include="assets\images\slider-2.jpg" />
     <Content Include="assets\images\slider-3.jpg" />
@@ -157,6 +159,7 @@
     <Content Include="assets\images\thumb4.jpg" />
     <Content Include="assets\images\thumb5.jpg" />
     <Content Include="assets\images\unknown.jpg" />
+    <Content Include="assets\images\waste-material-handler.jpg" />
     <Content Include="assets\Scripts\jquery.leanModal.min.js" />
     <Content Include="assets\Scripts\__MACOSX\._jquery.leanModal.min.js" />
     <Content Include="assets\Styles\Site.css" />
