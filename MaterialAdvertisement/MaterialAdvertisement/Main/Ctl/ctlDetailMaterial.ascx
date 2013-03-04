@@ -9,26 +9,28 @@
         <div id="sliderFrame">
             <div id="slider">
                         
-                    <img src="../../assets/images/image-slider-1.jpg" alt="Welcome to jQuery Slider" />
-                        
-                        <img src="../../assets/images/image-slider-2.jpg" alt="Pure Javascript. No jQuery. No Flash." />
-                        <img src="../../assets/images/image-slider-3.jpg" />
+                  <!--  <img src="../../assets/images/image-slider-1.jpg" alt="Welcome to jQuery Slider" />-->
+                     
+                     <img src="../../assets/images/ScrapMetalRecycling.jpg" alt="Welcome to jQuery Slider" />
+                   
+                        <img src="../../assets/images/waste-material-handler.jpg" alt="Pure Javascript. No jQuery. No Flash." />
+                        <img src="../../assets/images/1201302-74275-crane-carrying-waste-material-at-recycling-center.jpg" />
                         <img src="../../assets/images/image-slider-4.jpg" />
             </div>
             <!--thumbnails-->
             <div id="thumbs">
                 <div class="thumb">
-                    <div class="frame"><img src="../../assets/images/thumb1.jpg" /></div>
+                    <div class="frame"><img src="../../assets/images/ScrapMetalRecycling.jpg" /></div>
                     <div class="thumb-content"><p>HTML Content</p>Thumbnails allows any HTML content</div>
                     <div style="clear:both;"></div>
                 </div>
                 <div class="thumb">
-                    <div class="frame"><img src="../../assets/images/thumb2.jpg" /></div>
+                    <div class="frame"><img src="../../assets/images/waste-material-handler.jpg" /></div>
                     <div class="thumb-content"><p>Customizable</p>Thumbnail style is customizable</div>
                     <div style="clear:both;"></div>
                 </div>
                 <div class="thumb">
-                    <div class="frame"><img src="../../assets/images/thumb3.jpg" /></div>
+                    <div class="frame"><img src="../../assets/images/1201302-74275-crane-carrying-waste-material-at-recycling-center.jpg" /></div>
                     <div class="thumb-content"><p>Variety of Layouts</p>Just a CSS tweak.</div>
                     <div style="clear:both;"></div>
                 </div>

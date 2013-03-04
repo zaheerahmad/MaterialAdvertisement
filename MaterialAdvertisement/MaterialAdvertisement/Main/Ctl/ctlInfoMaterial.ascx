@@ -9,10 +9,10 @@
                                                 <td>10-12-2012</td>
                                                 <td>Zaheer Ahmad</td>
                                                 <td><i class='icon-ok'></i>Sold</td>
-                                                <td><img src='../../assets/images/thumb1.jpg' alt='no img avaiable'></img></td>
+                                                <td><img src='../../assets/images/thumb1.jpg' alt='no img avaiable'></td>
                                                 <td><a type='submit' href='../../Home.aspx?ctl=17'>Details</a></td>
                                                 </tr>
-                                                </div>"	
+                                                </div>
 									       <div class='row' style='margin-top:10px'> 
                                                     <tr class='materialInfo'>
                                                     <td>Material Name A</td>
@@ -20,7 +20,7 @@
                                                     <td>10-12-2012</td>
                                                     <td>Khurram Farooq</td>
                                                     <td><i class='icon-ok'></i>Sold</td>
-                                                    <td><img src='../../assets/images/thumb1.jpg' alt='no img avaiable'></img></td>
+                                                    <td><img src='../../assets/images/thumb1.jpg' alt='no img avaiable'></td>
                                                     <td><a type='submit' class='btn' onClick='getMaterialDetail()'>Details</a></td>
                                                     </tr>
                                                     </div></table><div class='row'><ul class='pager'>

@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ctlInfoMaterialSecond.ascx.cs" Inherits="MaterialAdvertisement.Main.Ctl.ctlInfoMaterialSecond" %>
 <div class="media infoDiv"  style="margin-top:19px;">
   <a class="pull-left" href="../../Home.aspx?ctl=17">
-    <img class="media-object imgInfo" src='../../assets/images/photo.jpg' alt='No Image'></img>
+    <img class="media-object imgInfo" src='../../assets/images/ScrapMetalRecycling.jpg' alt='No Image'></img>
   </a>
   <div class="media-body">
     <div class="row">
@@ -18,11 +18,11 @@
                   This material is avaible for sale, if any one intersted in it can contact me on metioned number at given description
                 </div>
             </div>
-            <div class="span3">
+            <div class="span3 moreInfo">
                        <ul> 
-                            <li><i class="icon-asterisk"></i><strong>Khurram</strong></li>
-                            <li><i class="icon-asterisk"></i><strong>Canada</strong></li>
-                            <li><i class="icon-ok"></i><strong>Avaiable</strong></li>
+                            <li><i class="icon-asterisk"></i><strong>Company Name</strong></li>
+                            <li><i class="icon-asterisk"></i><strong>Location</strong></li>
+                            <li><i class="icon-ok"></i><strong>Available</strong></li>
                        </ul>
             </div>
        </div>
@@ -31,7 +31,7 @@
 </div>
 <div class="media infoDiv"  style="margin-top:19px;">
   <a class="pull-left" href="../../Home.aspx?ctl=17">
-    <img class="media-object imgInfo" src='../../assets/images/photo.jpg' alt='No Image'></img>
+    <img class="media-object imgInfo" src='../../assets/images/1201302-74275-crane-carrying-waste-material-at-recycling-center.jpg' alt='No Image'></img>
   </a>
   <div class="media-body">
       <div class="row">
@@ -50,11 +50,11 @@
                   This material is avaible for sale, if any one intersted in it can contact me on metioned number at given description
                 </div>
             </div>
-            <div class="span3">
+            <div class="span3 moreInfo">
                 <ul>
-                    <li><i class="icon-asterisk"></i><strong>Khurram</strong></li>
-                    <li><i class="icon-asterisk"></i><strong>Canada</strong></li>
-                    <li><i class="icon-ok"></i><strong>Avaiable</strong></li>
+                    <li><i class="icon-asterisk"></i><strong>Company Name</strong></li>
+                    <li><i class="icon-asterisk"></i><strong>Location</strong></li>
+                    <li><i class="icon-ok"></i><strong>Available</strong></li>
                 </ul>
 
             </div>
@@ -64,7 +64,7 @@
 </div>
 <div class="media infoDiv"  style="margin-top:19px;">
   <a class="pull-left" href="../../Home.aspx?ctl=17">
-    <img class="media-object imgInfo" src='../../assets/images/photo.jpg' alt='No Image'></img>
+    <img class="media-object imgInfo" src='../../assets/images/waste-material-handler.jpg' alt='No Image'></img>
   </a>
   <div class="media-body">
          <div class="row">
@@ -92,18 +92,20 @@ then we can go from there
 
                 </div>
             </div>
-            <div class="span3" style="display: inline-block;">
+            <div class="span3 moreInfo" style="display: inline-block;">
                 <ul>
-                    <li><i class="icon-asterisk"></i><strong>Khurram</strong></li>
-                    <li><i class="icon-asterisk"></i><strong>Canada</strong></li>
-                    <li><i class="icon-ok"></i><strong>Avaiable</strong></li>
+                    <li><i class="icon-asterisk"></i><strong>Company Name</strong></li>
+                    <li><i class="icon-asterisk"></i><strong>Location</strong></li>
+                    <li><i class="icon-ok"></i><strong>Available</strong></li>
                 </ul>
 
             </div>
        </div>
   </div>
 
+
 </div>
+
 <div class='row'>
               <ul class='pager'>
                       <li class='previous'>
@@ -114,6 +116,7 @@ then we can go from there
                         </li>
                </ul>
 </div>
+
 
 
 
